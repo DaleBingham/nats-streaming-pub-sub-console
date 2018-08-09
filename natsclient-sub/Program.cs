@@ -20,7 +20,7 @@ namespace natsclient_sub
             //opts.StartAt(22);
             var cf = new StanConnectionFactory();
             var c = cf.CreateConnection("mynatscluster", "my-reader");
-            var s = c.Subscribe("scars.log.error", opts, ackHandler);
+            var s = c.Subscribe("my.log.error", opts, ackHandler);
         }
     }
 }

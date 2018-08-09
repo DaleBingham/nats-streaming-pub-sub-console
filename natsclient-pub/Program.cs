@@ -28,7 +28,7 @@ namespace natsclient_pub
             int i = 0;
             // returns immediately
             while (true) {
-                string guid = c.Publish("scars.log.error", System.Text.Encoding.UTF8.GetBytes(i.ToString() + " - This error sucks!"), ackHandler);
+                string guid = c.Publish("my.log.error", System.Text.Encoding.UTF8.GetBytes(i.ToString() + " - This error sucks!"), ackHandler);
                 Console.WriteLine("{1} - Published msg {0} was stored on the server.", guid, i.ToString());
                 i++;
                 System.Threading.Thread.Sleep(new TimeSpan(0, 0, 5));
