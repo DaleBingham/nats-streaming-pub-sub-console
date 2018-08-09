@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "natsclient-pub"
+		},
+		{
+			"path": "natsclient-sub"
+		}],
+	"settings": {}
+}
